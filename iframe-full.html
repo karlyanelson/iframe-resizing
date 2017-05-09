@@ -11,7 +11,9 @@
       <nav>
         <ul>
           <li><a href="index.html">No iFrame</a></li>
-          <li class="active"><a href="iframe.html">iFrame</a></li>
+          <li class="active"><a href="iframe-full.html">iFrame-Full</a></li>
+          <li><a href="iframe-partial.html">iFrame-Partial</a></li>
+          <li><a href="iframe-multiple.html">iFrame-Multiple</a></li>
         </ul>
       </nav>
     </header>
@@ -117,14 +119,8 @@
         </ul>
       </div>
       <main class="content">
-        <iframe src="https://hipsum.co/" onload="resizeIframe(this)" scrolling="yes"></iframe>
+        <iframe class="iframe-full" src="https://material.angularjs.org/latest/demo/dialog" scrolling="yes"></iframe>
       </main>
     </div>
-
-    <script type="text/javascript">
-      function resizeIframe(iframe) {
-        iframe.height = iframe.contentWindow.document.body.scrollHeight + "px";
-      }
-    </script>
   </body>
 </html>
